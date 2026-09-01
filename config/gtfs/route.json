@@ -1,6 +1,12 @@
 {
     "default_route_id_enabled": true,
     "use_route_short_name_for_route_id": true,
+    "route_short_name_cleaners": [
+        {
+            "regex": "\\s*-\\s*.*$",
+            "comment": "Remove everything after a dash, including the dash itself"
+        }
+    ],
     "default_route_long_name_enabled": true,
     "route_long_name_cleaners": [
         {
